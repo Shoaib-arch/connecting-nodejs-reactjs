@@ -11,7 +11,7 @@ const user = [
 app.get('/api', (req, res) => {
     res.json(user);
 })
-
+// getting data from reactjs server
 app.post('/data', (req, res)=>{
     console.log(req.body);
     console.log('user');
