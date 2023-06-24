@@ -14,7 +14,7 @@ app.get('/api', (req, res) => {
 // getting data from reactjs server
 app.post('/data', (req, res)=>{
     console.log(req.body);
-    console.log('user');
+    console.log('users');
     res.sendStatus(200);
 });
 
