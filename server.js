@@ -8,6 +8,8 @@ app.use(express.urlencoded({extendedUrl: true}));
 const user = [
     {name:'Shoaib'}
 ]
+
+//getting data from api url
 app.get('/api', (req, res) => {
     res.json(user);
 })
@@ -18,6 +20,7 @@ app.post('/data', (req, res)=>{
     res.sendStatus(200);
 });
 
+//listening to port 4000
 app.listen(4000, (req, res) => {
     console.log("listening 4000");
 })
